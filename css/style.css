@@ -1,0 +1,78 @@
+:root {
+    --main-color: #f8f8f8;
+}
+body {
+    background-color: var(--main-color);
+}
+
+.interacao1 {
+    background-color: blue;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.interacao1:hover {
+    background-color: red;
+}
+
+.input1:focus {
+    background-color: blue;
+}
+
+.botao1:active {
+    background-color: blue;
+}
+
+.filho:nth-child(2) {
+    background-color: green;
+    height: 20px;
+    width: 50px;
+}
+
+.filho:last-child {
+    background-color: chocolate;
+    height: 20px;
+    width: 50px;
+}
+
+.filho:first-child {
+    background-color: yellow;
+    height: 20px;
+    width: 50px;
+}
+
+body {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.checkbox:checked {
+    outline: 5px solid green;
+}
+
+.input2:valid {
+    border: 5px solid green;
+}
+
+.input3:invalid {
+    border: 5px solid red;
+}
+
+html:lang(en) {
+    background-color: black;
+    h1,h2,h3,h4,p{
+        color: white;
+    }
+}
+
+html:lang(pt-br) {
+    background-color: white;
+}
+
+:target {
+    border: 2px solid blue;
+    background-color: white;
+}
